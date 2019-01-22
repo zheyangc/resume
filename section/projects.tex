@@ -1,0 +1,63 @@
+\section{PROJECTS}
+
+% ------- DEFINE PROJECT LAYOUT
+\newcommand*{\project}[4][.25em]{
+  % \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {#3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+	\par\addvspace{#1}}
+
+{\project{Information Retrieval and Web Search Engine}{Oct 2017 - Nov 2017}
+	{\begin{itemize}
+		\item Developed a web search engine to retrieve and search CNN news using Crawler4j and Apache Solr.
+		\item Applied Page Rank for search, supported auto completion and spell correction features.
+		\item Utilized jQuery and Materialize for front-end, PHP for back-end.
+  	\end{itemize}
+  }
+}
+
+{\project{Collaborative Online Code Playground}{Aug 2017 - Oct 2017}
+	{\begin{itemize}
+		\item Designed and developed a single-page web application deployed on AWS for users to register, login, edit questions and code online using Auth0, Angular 4, Node.js and MongoDB.
+		\item Created a code editor for multiple users to edit simultaneously by implementing Socket.io, Redis and ACE source.
+		\item Built a code executor service with Flask to compile and execute Java, C++, Python codes inside Docker Unix image.
+		\item Decoupled services using RESTful API and implemented load balance using Nginx to improve system throughput.
+  	\end{itemize}
+  }
+}
+
+{\project{Kernel Development for Weenix OS}{May 2017 - Jun 2017}
+	{\begin{itemize}
+		\item Implemented threads, processes, scheduling and synchronization primitives on Unix-like Weenix OS.
+		\item Developed virtual file system and virtual memory in C, managed address spaces and run user-level code.
+		\item Tested, debugged kernel in GDB, and use Git for version control.
+  	\end{itemize}
+  }
+}
+
+{\project{Facebook Search, Web and Android Application}{Jan 2017 - Mar 2017}
+	{\begin{itemize}
+		\item Designed responsive websites for information retrieval of Facebook entities using Facebook SDK and Graph API.
+		\item Enhanced user experience at front-end using AngularJS and Bootstrap and constructed backend server logic for data processing and JSON response with PHP on AWS.
+		\item Developed an Android app as mobile version for the web application using Android SDK in Java.
+  	\end{itemize}
+  }
+}
+
+{\project{Socket Programming for Distributed Computing}{Oct 2016 - Nov 2016}
+	{\begin{itemize}
+		\item Constructed a computational offloading model where a single client offloads computation to and collected results from a web server which in turn distributed the load over another three backend servers.
+		\item Established communications among a client, a web server and several backend servers over TCP and UDP connections by programming sockets with C++ in Linux after preprocessing.
+  	\end{itemize}
+  }
+}
