@@ -18,7 +18,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.9]{geometry}
 \usepackage{multicol}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
@@ -47,38 +47,17 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
-  
-\newcommand*{\customcventry}[7][.25em]{
-  \begin{tabular}{@{}l} 
-    {\bfseries #4}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\bfseries #5}
-  \end{tabular} \\
-  \begin{tabular}{@{}l} 
-    {\itshape #3}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\itshape #2}
-  \end{tabular}
-  \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
 
+\input{config/command.tex}
 \setlength{\tabcolsep}{12pt}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
+
+% ----------------------------------------------------
+% BEGIN OF DOCUMENT
+% ----------------------------------------------------
 \begin{document}
 
-%\begin{CJK*}{UTF8}{gbsn} 
-% to typeset your resume in Chinese using CJK
+% \begin{CJK*}{UTF8}{gbsn} % to typeset your resume in Chinese using CJK
 
 \makecvtitle
 \vspace*{-15mm}
@@ -86,6 +65,7 @@
 \begin{center}
 \begin{tabular}{ c c c c c }
   \faGithub\enspace zheyangc &  
+  \faLinkedin\enspace cenzheyang &
   \faEnvelopeO\enspace cenzheyang@gmail.com & 
   \faMobile\enspace (213)-245-8384 & 
   \faHome\enspace Seattle, WA\\  
