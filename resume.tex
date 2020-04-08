@@ -1,83 +1,18 @@
-\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass{resume}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} 
 
-% modern themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-
-\input{config/config.tex}
-
-% character encoding
-\usepackage[utf8]{inputenc}
-\usepackage{fontawesome}
-\usepackage{tabularx}
-\usepackage{ragged2e}
-% if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
-\usepackage[margin=0.35in]{geometry}
-\usepackage{multicol}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-\usepackage{import}
-
-% personal data
-\name{Zheyang}{Cen}
-% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-% \address{Seattle}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-% \phone[mobile]{(213)-245-8384}                   % optional, remove / comment the line if not wanted
-% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-% \email{zhycareer@gmail.com}                               % optional, remove / comment the line if not wanted
-% \homepage{zhycen.com}                         % optional, remove / comment the line if not wanted
-% \extrainfo{}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-
-\input{config/command.tex}
-\setlength{\tabcolsep}{12pt}
-
-
-% ----------------------------------------------------
-% BEGIN OF DOCUMENT
-% ----------------------------------------------------
 \begin{document}
 
-% \begin{CJK*}{UTF8}{gbsn} % to typeset your resume in Chinese using CJK
 
-\makecvtitle
-\vspace*{-15mm}
+\begin{rSubsection}
+  {Zillow Group}
+  {Seattle, US}
+  {Site Engineer}
+  {June 2016 - Now}
+      \item On-site internship under this leading construction company. 
+      \item Learned and implemented various aspects such as quantity estimation, labour management and safety precautions.
+  \end{rSubsection}
 
-\begin{center}
-\begin{tabular}{ c c c c c }
-  \faGithub\enspace zheyangc &  
-  \faLinkedin\enspace zheyangcen &
-  \faEnvelopeO\enspace cenzheyang@gmail.com & 
-  \faMobile\enspace (213)-245-8384 & 
-  \faHome\enspace Seattle, WA\\  
-\end{tabular}
-\end{center}
-
-
-\import{sections/}{section/skills.tex}
-\import{sections/}{section/experience.tex}
-\import{sections/}{section/projects.tex}
-\import{sections/}{section/education.tex}
-% \import{sections/}{section/awards.tex}
 
 \end{document}
 
